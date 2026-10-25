@@ -45,7 +45,7 @@
       <a href="how-it-works.html">How it works</a>
       <a href="our-story.html">Our story</a>
     </nav>
-    <a class="hours-pill" href="#hours">Open Wed · Fri · Sat</a>
+    <a class="hours-pill" href="#hours" data-hours-status><span class="hours-pill__full">Open Wed · Fri · Sat</span><span class="hours-pill__short">Wed · Fri · Sat</span></a>
     <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
       <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -67,6 +67,47 @@
       </div>
       <div class="hero__pic">
         <img src="assets/hero-jars.jpg" alt="Jars of nuts and pasta and a bottle of soap on the shop counter" width="1600" height="1461" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="hours">
+    <div class="wrap">
+      <div class="band">
+
+        <div class="band__info">
+          <p class="eyebrow">Find us at Toxteth TV</p>
+          <h2 class="headline">Open three days a week</h2>
+
+          <ul class="hours-list" id="hours-list">
+            <li data-day="3"><span class="hours-list__day">Wednesday</span><span class="hours-list__time">10.30am – 4pm</span></li>
+            <li data-day="5"><span class="hours-list__day">Friday</span><span class="hours-list__time">10.30am – 4pm</span></li>
+            <li data-day="6"><span class="hours-list__day">Saturday</span><span class="hours-list__time">9.30am – 4pm</span></li>
+            <li class="is-closed"><span class="hours-list__day">Sun, Mon, Tue, Thu</span><span class="hours-list__time">Closed</span></li>
+          </ul>
+
+          <address>
+            <strong>Toxteth TV, ground floor</strong>
+            37–45 Windsor Street, Liverpool L8 1XE<br>
+            <a href="tel:+447547979864">07547 979864</a>
+          </address>
+
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Toxteth+TV%2C+37-45+Windsor+Street%2C+Liverpool+L8+1XE" rel="noopener">Get directions</a>
+          </div>
+        </div>
+
+        <div class="band__map">
+          <div class="map" id="map" data-src="https://maps.google.com/maps?q=Toxteth%20TV%2C%2037-45%20Windsor%20Street%2C%20Liverpool%20L8%201XE&amp;z=16&amp;output=embed">
+            <div class="map__ph">
+              <svg class="map__pin" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <p class="map__addr">37–45 Windsor Street<br>Liverpool L8 1XE</p>
+              <button class="btn btn--quiet map__load" type="button">Show the map</button>
+              <p class="map__note">Loads from Google Maps</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -132,32 +173,15 @@
     <a href="our-story.html" style="font-weight:600">Read our story</a>
   </section>
 
-  <section class="wrap hours" id="hours">
-    <div class="band">
-      <div class="stack">
-        <p class="eyebrow">Find us at Toxteth TV</p>
-        <h2 class="headline">Come and fill up</h2>
-      </div>
-      <dl>
-        <dt>Wednesday</dt><dd>10.30am – 4pm</dd>
-        <dt>Friday</dt><dd>10.30am – 4pm</dd>
-        <dt>Saturday</dt><dd>9.30am – 4pm</dd>
-        <dt>Sun – Tue, Thu</dt><dd class="closed">Closed</dd>
-      </dl>
-      <address>
-        <strong>Toxteth TV, ground floor</strong>
-        37–45 Windsor Street<br>Liverpool L8 1XE<br>
-        <a href="tel:+447547979864">07547 979864</a> · <a href="https://maps.google.com/?q=Toxteth+TV,+37-45+Windsor+Street,+Liverpool+L8+1XE" rel="noopener">Map</a>
-      </address>
-    </div>
-  </section>
-
 </main>
 
 <footer class="footer">
   <div class="wrap">
     <img src="assets/logo-white.svg" alt="EcoRefill" width="128" height="69" loading="lazy">
-    <p>Toxteth TV, 37–45 Windsor Street, Liverpool L8 1XE · <a href="tel:+447547979864">07547 979864</a> · <a href="mailto:ecorefilluk@gmail.com">ecorefilluk@gmail.com</a></p>
+    <div class="footer__text">
+      <p class="footer__hours">Open Wed &amp; Fri 10.30am–4pm · Sat 9.30am–4pm</p>
+      <p>Toxteth TV, 37–45 Windsor Street, Liverpool L8 1XE · <a href="tel:+447547979864">07547 979864</a> · <a href="mailto:ecorefilluk@gmail.com">ecorefilluk@gmail.com</a></p>
+    </div>
     <a class="insta" href="https://www.instagram.com/ecorefill_liverpool" rel="noopener">@ecorefill_liverpool</a>
   </div>
 </footer>
