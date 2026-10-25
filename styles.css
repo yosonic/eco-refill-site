@@ -44,7 +44,7 @@ body {
   color: var(--walnut);
   font: 400 17px/1.55 var(--font-sans);
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--leaf); text-underline-offset: 3px; }
 a:hover { color: #1b3a1f; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
