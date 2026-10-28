@@ -17,7 +17,16 @@ _headers            Cache rules for Cloudflare Pages
 
 They appear in four places: the hours pill in every header ("Open Wed · Fri · Sat"), the band on `index.html#hours`, the callout at the bottom of `our-story.html`, and the `openingHoursSpecification` JSON at the top of `index.html` (what Google reads). Change all four.
 
-## Deploy to Cloudflare Pages (free)
+## Live
+
+Served by GitHub Pages from `main` at **https://eco-refill.co.uk**. The `CNAME` file in this folder
+is what tells GitHub the custom domain — don't delete it. Push to `main` and the site redeploys in
+about a minute.
+
+DNS (GoDaddy): four A records on `@` pointing at GitHub (185.199.108–111.153) and a CNAME on `www`
+pointing at `yosonic.github.io`. Any GoDaddy *domain forwarding* must be off, or it overrides them.
+
+## Previous notes: deploy to Cloudflare Pages (free)
 
 1. Sign in at dash.cloudflare.com → **Workers & Pages** → **Create** → **Pages** → **Upload assets**.
 2. Name the project `eco-refill`, drag this whole folder in, deploy. You get a `*.pages.dev` URL straight away.
