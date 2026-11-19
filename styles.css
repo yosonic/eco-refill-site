@@ -193,6 +193,8 @@ a.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); colo
 .band address { font-style: normal; }
 .band address strong { display: block; font-weight: 600; }
 .band .btn-row { margin-top: 4px; }
+.pay-note { display: flex; align-items: center; gap: 10px; margin: 0; font-weight: 700; color: var(--leaf); }
+.pay-note svg { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 .hours-list { list-style: none; margin: 8px 0 0; padding: 0; }
 .hours-list li {
