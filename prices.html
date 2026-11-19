@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products &amp; prices — EcoRefill, Liverpool L8</title>
+<meta name="description" content="Today's prices at EcoRefill, Toxteth: every refill and product we stock, priced per 100g, per 100ml or per item, straight from the shop's own stock list.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Laila:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header wall">
+  <div class="wrap header__bar">
+    <a class="header__logo" href="index.html"><img src="assets/logo-white.svg" alt="EcoRefill" width="136" height="73"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="prices.html" aria-current="page">Prices</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="our-story.html">Our story</a>
+    </nav>
+    <a class="hours-pill" href="index.html#hours" data-hours-status><span class="hours-pill__full">Open Wed · Fri · Sat</span><span class="hours-pill__short">Wed · Fri · Sat</span></a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero wall">
+    <div class="wrap">
+      <p class="eyebrow">Prices</p>
+      <h1 class="hero-title">Products &amp; prices</h1>
+      <p class="lead">Everything we stock and what it costs. This list comes straight from the shop's own stock sheet, so the prices you see are today's.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+
+      <div class="price-tools" id="prices-tools" hidden>
+        <label class="price-search">
+          <span class="price-search__label">Find a product</span>
+          <input type="search" id="prices-search" placeholder="Try oats, shampoo or cinnamon" autocomplete="off">
+        </label>
+        <nav class="price-jump" id="prices-jump" aria-label="Jump to a category"></nav>
+        <p class="price-count" id="prices-count" aria-live="polite"></p>
+      </div>
+
+      <p class="price-status" id="prices-status">Loading today's prices…</p>
+
+      <div class="callout" id="prices-fallback" hidden>
+        <h2 class="title">We couldn't load the price list just now</h2>
+        <p>You can still see every price in our stock sheet, or ring us on <a href="tel:+447547979864">07547 979864</a> and we'll tell you.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="https://docs.google.com/spreadsheets/d/17NkGhVBMrWBjORApHX6iD7ZFC9GNuGRIWp7DStZF2pI/edit" rel="noopener">Open the price sheet</a></div>
+      </div>
+      <noscript>
+        <div class="callout">
+          <h2 class="title">See our prices</h2>
+          <p>This page needs JavaScript to show live prices. You can read the full list in our stock sheet instead.</p>
+          <div class="btn-row"><a class="btn btn--primary" href="https://docs.google.com/spreadsheets/d/17NkGhVBMrWBjORApHX6iD7ZFC9GNuGRIWp7DStZF2pI/edit" rel="noopener">Open the price sheet</a></div>
+        </div>
+      </noscript>
+
+      <div id="prices"></div>
+
+      <div class="callout" style="margin-top:48px">
+        <h2 class="title">Good to know</h2>
+        <p>Refills are sold loose by weight or volume, so you pay for exactly what you take and there's no minimum. We prefer card payment wherever possible.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="shop.html#order-ahead">Click &amp; collect</a>
+          <a class="btn btn--quiet" href="index.html#hours">Plan your visit</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <img src="assets/logo-white.svg" alt="EcoRefill" width="128" height="69" loading="lazy">
+    <div class="footer__text">
+      <p class="footer__hours">Open Wed &amp; Fri 10.30am–4pm · Sat 9.30am–4pm · Card payment preferred</p>
+      <p>Toxteth TV, 37–45 Windsor Street, Liverpool L8 1XE · <a href="tel:+447547979864">07547 979864</a> · <a href="mailto:ecorefilluk@gmail.com">ecorefilluk@gmail.com</a></p>
+    </div>
+    <a class="insta" href="https://www.instagram.com/ecorefill_liverpool" rel="noopener">@ecorefill_liverpool</a>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+<script src="prices.js" defer></script>
+</body>
+</html>
